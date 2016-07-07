@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Search Results for: {{entryfield}}</h1>
+
+<table>
+    {% for name in names %}
+    <tr>
+        <td> <p>Name: </p>{{name[0]}} </td><td><p>Region: </p> {{name[1]}} </td><td><p>Population: </p> {{name[2]}} </td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}
